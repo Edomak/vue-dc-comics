@@ -115,6 +115,10 @@ export default {
                     color: white;
                     font-size: 13px;
                     color: #797979;
+
+                    &:hover {
+                        color: white;
+                    }
                 }
             }
         }

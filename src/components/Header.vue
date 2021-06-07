@@ -6,20 +6,8 @@
             </div>
             <nav>
                 <ul>
-                    <li>
-                        <a href="#">Characters</a>
-                    </li>
-                    <li>
-                        <a class="active" href="#">Comix</a>
-                    </li>
-                    <li>
-                        <a href="#">Movies</a>
-                    </li>
-                    <li>
-                        <a href="#">Tv</a>
-                    </li>
-                    <li>
-                        <a href="#">Games</a>
+                    <li v-for="(link, index) in links" :key="index">
+                        <a :class="{ active: link.current }" :href="link.url"> {{ link.text }} </a>
                     </li>
                 </ul>
             </nav>
@@ -29,7 +17,64 @@
 
 <script>
 export default {
-    name: "Header"
+    name: "Header",
+    data: function () {
+        return {
+            links: [
+                {
+                    text: "Characters",
+                    url: "#characters",
+                    current: false
+                },
+                {
+                    text: "Comix",
+                    url: "#comix",
+                    current: true
+                },
+                {
+                    text: "Movies",
+                    url: "#movies",
+                    current: false
+                },
+                {
+                    text: "Tv",
+                    url: "#tv",
+                    current: false
+                },
+                {
+                    text: "Collectibles",
+                    url: "#collectibles",
+                    current: false
+                },
+                {
+                    text: "Fans",
+                    url: "#fans",
+                    current: false
+                },
+                {
+                    text: "News",
+                    url: "#news",
+                    current: false
+                },
+                {
+                    text: "Shop",
+                    url: "#shop",
+                    current: false
+                },
+                {
+                    text: "Games",
+                    url: "#games",
+                    current: false
+                },
+                {
+                    text: "Games",
+                    url: "#games",
+                    current: false
+                },
+
+            ] 
+        }
+    }
 }
 </script>
 
@@ -51,9 +96,10 @@ export default {
         li a {
             text-decoration: none;
             text-transform: uppercase;
-            padding: 20px 20px;
-            color: #1d1d1d;
-            font-size: 14px;
+            padding: 20px 10px;
+            color: #303030;
+            font-size: 12px;
+            font-weight: bolder;
 
             &.active,
             &:hover {

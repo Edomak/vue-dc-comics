@@ -66,6 +66,11 @@ export default {
         color: white;
         font-weight: bolder;
         font-size: 14px;
+
+        &:hover {
+            border: 2px solid white;
+            color: #0082f9;
+        }
     }
     .follow {
         text-decoration: none;
@@ -73,6 +78,10 @@ export default {
         font-size: 14px;
         font-weight: bolder;
         vertical-align: middle;
+
+        &:hover {
+            color: white;
+        }
     }
     ul {
         display: flex;
