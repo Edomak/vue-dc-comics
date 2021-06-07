@@ -29,7 +29,7 @@ export default {
                 {
                     text: "Comix",
                     url: "#comix",
-                    current: true
+                    current: false
                 },
                 {
                     text: "Movies",
@@ -47,9 +47,14 @@ export default {
                     current: false
                 },
                 {
+                    text: "Videos",
+                    url: "#videos",
+                    current: false
+                },
+                {
                     text: "Fans",
                     url: "#fans",
-                    current: false
+                    current: true
                 },
                 {
                     text: "News",
@@ -58,17 +63,7 @@ export default {
                 },
                 {
                     text: "Shop",
-                    url: "#shop",
-                    current: false
-                },
-                {
-                    text: "Games",
-                    url: "#games",
-                    current: false
-                },
-                {
-                    text: "Games",
-                    url: "#games",
+                    url: "shop",
                     current: false
                 },
 
